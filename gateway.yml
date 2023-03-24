@@ -6,7 +6,7 @@ spring:
           enabled: true
       routes:
       - id: serviceA
-        uri: lb://service-A
+        uri: lb://service-a
         predicates:
         - Path=/srva/**
         filters:
@@ -16,7 +16,7 @@ spring:
             name: monitor-srvA
             fallbackUri: forward:/fallback/serviceA
       - id: ServiceB
-        uri: lb://service-B
+        uri: lb://service-a
         predicates:
         - Path=/srvb/**
         filters:
