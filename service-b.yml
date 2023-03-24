@@ -6,7 +6,7 @@ spring:
     consul:
       discovery:
         instanceId: ${spring.application.name}:${random.value}
-        health-check-interval: 5s
+        health-check-interval: 15s
       config:
         management: 
           enabled: true
